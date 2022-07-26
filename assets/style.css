@@ -22,8 +22,24 @@ h2 {
     bottom: 550px;
 }
 
+.inputtext {
+    border-radius: 10px;
+    font-size: 40px;
+}
+
 .form {
     font-size: 25px;
+}
+
+.form1 {
+    position: absolute;
+    left: 200px;
+}
+
+.card {
+    position: absolute;
+    left: 150px;
+    top: 325px;
 }
 
 .card-2 {
@@ -46,6 +62,10 @@ h2 {
     width: 400px;
     background-color: lightskyblue;
     color: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 125px;
+    font-size: 40px;
 }
 
 .body {
