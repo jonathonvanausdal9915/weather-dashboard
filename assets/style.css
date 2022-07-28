@@ -1,13 +1,3 @@
-@media (max-width: 575.98px) {}
-
-@media (min-width: 576px) and (max-width: 767.98px) {}
-
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {}
-
-@media (min-width: 1200px) {}
-
 .h1 {
     text-align: center;
     height: 100px;
@@ -17,9 +7,9 @@
 }
 
 h2 {
-    position: absolute;
-    right: 1380px;
-    bottom: 550px;
+    position: relative;
+    left: 800px;
+    bottom: 710px;
 }
 
 .inputtext {
@@ -32,24 +22,24 @@ h2 {
 }
 
 .form1 {
-    position: absolute;
+    position: relative;
     left: 200px;
 }
 
 .card {
-    position: absolute;
+    position: relative;
     left: 150px;
-    top: 325px;
+    top: 100px;
 }
 
 .card-2 {
-    height: 400px;
+    height: 500px;
     width: 1500px;
     text-align: start;
     border: solid;
-    position: absolute;
-    top: 150px;
-    right: 100px;
+    position: relative;
+    bottom: 750px;
+    left: 800px;
 }
 
 .card-body {
@@ -63,24 +53,26 @@ h2 {
     background-color: lightskyblue;
     color: white;
     border-radius: 10px;
-    position: absolute;
-    top: 125px;
+    position: relative;
+    top: 10px;
     font-size: 40px;
 }
 
 .body {
     border: solid;
     height: 1200px;
-    width: 100%;
+    width: 2500px;
+    margin: auto;
 }
 
 .box1 {
     height: 300px;
     width: 200px;
     border: solid;
-    position: absolute;
-    right: 100px;
-    bottom: 250px;
+    position: relative;
+    left: 800px;
+    bottom: 700px;
+    ;
     color: white;
     background-color: rgb(71, 71, 85);
 }
@@ -89,9 +81,9 @@ h2 {
     height: 300px;
     width: 200px;
     border: solid;
-    position: absolute;
-    right: 425px;
-    bottom: 250px;
+    position: relative;
+    left: 1125px;
+    bottom: 1000px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
@@ -100,9 +92,9 @@ h2 {
     height: 300px;
     width: 200px;
     border: solid;
-    position: absolute;
-    right: 750px;
-    bottom: 250px;
+    position: relative;
+    left: 1450px;
+    bottom: 1300px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
@@ -111,9 +103,9 @@ h2 {
     height: 300px;
     width: 200px;
     border: solid;
-    position: absolute;
-    right: 1075px;
-    bottom: 250px;
+    position: relative;
+    left: 1775px;
+    bottom: 1600px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
@@ -122,9 +114,9 @@ h2 {
     height: 300px;
     width: 200px;
     border: solid;
-    position: absolute;
-    right: 1400px;
-    bottom: 250px;
+    position: relative;
+    left: 2100px;
+    bottom: 1900px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
