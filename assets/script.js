@@ -2,24 +2,32 @@ var inputEl = document.querySelector('input');
 var form = document.querySelector("form");
 var apiLat;
 var apiLon;
+var count = 0;
+
 form.addEventListener("click", function(event) {
     event.preventDefault()
 });
 
+function displayCities() {
 
-
+    for (var i = 0; i < 8; i++) {
+        var city = document.getElementById("city-" + i);
+        city.textContent = localStorage.getItem("city-" + i);
+    };
+}
 
 function searchBtn() {
     inputValue = inputEl.value;
-    localStorage.setItem("city", inputEl.value);
-    for (var i = 0; i < localStorage.length; i++) {
-        var city = document.getElementById("city-" + i);
-        var storagecity = localStorage.getItem("city");
-        city.textContent = storagecity;
+    console.log(count);
 
-        var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e";
-        var data = getlatlon(weatherUrl);
-    };
+    var item = localStorage.setItem("city-" + count, inputValue);
+    count = count + 1;
+    console.log(count);
+
+    displayCities();
+
+    var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e";
+    var data = getlatlon(weatherUrl);
 };
 
 
