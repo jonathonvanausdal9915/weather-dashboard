@@ -4,6 +4,7 @@ var apiLat;
 var apiLon;
 var count = 0;
 
+
 form.addEventListener("click", function(event) {
     event.preventDefault()
 });
@@ -13,6 +14,9 @@ function displayCities() {
     for (var i = 0; i < 8; i++) {
         var city = document.getElementById("city-" + i);
         city.textContent = localStorage.getItem("city-" + i);
+        city.style.color = "black";
+        city.style.backgroundColor = "lightgrey";
+
     };
 }
 
@@ -93,7 +97,7 @@ function fivedayforecast(data) {
         temperature.textContent = data.list[i].main.temp + " F";
         wind.textContent = data.list[i].wind.speed + " MPH";
         humidity.textContent = data.list[i].main.humidity + " %";
-        date.textContent = data.list[i].dt_txt + " Date";
+        date.textContent = data.list[i].dt_txt;
 
     };
 };

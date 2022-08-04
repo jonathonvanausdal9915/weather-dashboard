@@ -28,6 +28,8 @@ h2 {
 
 .card {
     position: relative;
+    height: 550px;
+    font-size: 25px;
     left: 150px;
     top: 100px;
 }
