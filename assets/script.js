@@ -4,13 +4,22 @@ var apiLat;
 var apiLon;
 form.addEventListener("click", function(event) {
     event.preventDefault()
-
 });
+
+
+
 
 function searchBtn() {
     inputValue = inputEl.value;
-    var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e";
-    var data = getlatlon(weatherUrl);
+    localStorage.setItem("city", inputEl.value);
+    for (var i = 0; i < localStorage.length; i++) {
+        var city = document.getElementById("city-" + i);
+        var storagecity = localStorage.getItem("city");
+        city.textContent = storagecity;
+
+        var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e";
+        var data = getlatlon(weatherUrl);
+    };
 };
 
 
