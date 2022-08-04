@@ -12,9 +12,38 @@ h2 {
     bottom: 710px;
 }
 
+.classs {
+    position: relative;
+    bottom: 250px;
+}
+
 .inputtext {
     border-radius: 10px;
     font-size: 40px;
+}
+
+.icon-1 {
+    background-image: url("./images/Sunnyicon.jpg");
+    background-size: cover;
+    visibility: hidden;
+}
+
+.icon-2 {
+    background-image: url("./images/Rainicon.jpg");
+    background-size: cover;
+    visibility: hidden;
+}
+
+.icon-3 {
+    background-image: url("./images/cloudyicon.jpg");
+    background-size: cover;
+    visibility: hidden;
+}
+
+.icon-4 {
+    background-image: url("./images/snowicon.jpg");
+    background-size: cover;
+    visibility: hidden;
 }
 
 .form {
@@ -42,6 +71,39 @@ h2 {
     position: relative;
     bottom: 750px;
     left: 800px;
+}
+
+#icon-1 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 50px;
+}
+
+#icon-2 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 150px;
+}
+
+#icon-3 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 250px;
+}
+
+#icon-4 {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    bottom: 350px;
+    border: solid;
 }
 
 .card-body {

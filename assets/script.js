@@ -19,7 +19,7 @@ function displayCities() {
 
     };
 }
-
+// if main ==clear  style 
 function searchBtn() {
     inputValue = inputEl.value;
     console.log(count);
@@ -103,10 +103,30 @@ function fivedayforecast(data) {
 };
 
 function showWeather(data) {
+
     var tempr = document.getElementById("temp");
     var winds = document.getElementById("wind");
     var humid = document.getElementById("humidity");
     var cityy = document.getElementById("city");
+    console.log(data);
+    if (data.weather[0].main === "Clouds") {
+        var iconn = document.getElementById("icon-3");
+        iconn.style.visibility = "visible";
+    } else if (data.weather[0].main === "Clear") {
+        var iconnn = document.getElementById("icon-1");
+        iconnn.style.visibility = "visible";
+    } else if (data.weather[0].main === "Snow") {
+        var iconnnn = document.getElementById("icon-4");
+        iconnnn.style.visibility = "visible";
+
+    } else {
+        data.weather[0].main === "Rain";
+        var iconnn = document.getElementById("icon-2");
+        iconnn.style.visibility = "visible";
+    }
+
+
+
 
     tempr.textContent = data.main.temp + " F";
     winds.textContent = data.wind.speed + " MPH";
