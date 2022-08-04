@@ -4,11 +4,11 @@ var apiLat;
 var apiLon;
 var count = 0;
 
-
+//Prevents Default of page refreshing on submit//
 form.addEventListener("click", function(event) {
     event.preventDefault()
 });
-
+// Grabs all city elements and gets city name from local storage//
 function displayCities() {
 
     for (var i = 0; i < 8; i++) {
@@ -19,7 +19,7 @@ function displayCities() {
 
     };
 }
-// if main ==clear  style 
+//uses the input value to pass in city name on search//
 function searchBtn() {
     inputValue = inputEl.value;
     console.log(count);
@@ -28,13 +28,13 @@ function searchBtn() {
     count = count + 1;
     console.log(count);
 
-    displayCities();
+    displayCities(); //calls displaycities function//
 
-    var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e";
-    var data = getlatlon(weatherUrl);
+    var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e"; //passes inputvalue for city name//
+    var data = getlatlon(weatherUrl); //gets the lat and lon from weatherurl//
 };
 
-
+//gets the lat and lon from response//
 function getlatlon(apiUrl) {
     var weatherData = fetch(apiUrl)
         .then(function(response) {
@@ -51,7 +51,7 @@ function getlatlon(apiUrl) {
 
 };
 
-// https: //api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}//
+//passes lat and lon data and gets all the weather data for the city//
 function getWeather(lonlatdata) {
     apiLat = Number(lonlatdata[0].lat);
     apiLon = Number(lonlatdata[0].lon);
@@ -69,7 +69,7 @@ function getWeather(lonlatdata) {
             }
         });
 };
-
+// gets all data from five day forecast 5 days in advanced for each city by passing in lat and lon//
 function fiveday(apiLat, apiLon) {
     var fivedayapi = "https://api.openweathermap.org/data/2.5/forecast?lat=" + apiLat + "&lon=" + apiLon + "&appid=b691141e61134e390bbe0f3d737ad24e";
     var weatherData = fetch(fivedayapi)
@@ -86,7 +86,7 @@ function fiveday(apiLat, apiLon) {
         });
 
 };
-
+// five day forecast data//
 function fivedayforecast(data) {
     // var length = data.list.length;
     for (var i = 0; i < 5; i++) {
@@ -101,7 +101,7 @@ function fivedayforecast(data) {
 
     };
 };
-
+//displays icons and data to elements on the page//
 function showWeather(data) {
 
     var tempr = document.getElementById("temp");
