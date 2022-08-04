@@ -10,5 +10,5 @@
 
 ## Links
 * https://github.com/jonathonvanausdal9915/weather-dashboard
-* https://jonathonvanausdal9915.github.io/codequiz/
+* https://jonathonvanausdal9915.github.io/weather-dashboard/
 ## Screnshot
