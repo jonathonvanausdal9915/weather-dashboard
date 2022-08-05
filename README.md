@@ -1,6 +1,6 @@
 ## Weather-Dashboard
 ## Discription
-*  When I search for a city name. I get all weather data from that specefic city name.
+*  When I search for a city name. I get all weather data from that specific city name.
 *  I am presented with a city name. 
 *  I am presented with temperature in degreees F. wind speed. humidity. and the current date.
 *  I am presented with a 5 day forecast for the specified city.
