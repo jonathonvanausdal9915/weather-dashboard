@@ -110,19 +110,43 @@ function showWeather(data) {
     var cityy = document.getElementById("city");
     console.log(data);
     if (data.weather[0].main === "Clouds") {
-        var iconn = document.getElementById("icon-3");
-        iconn.style.visibility = "visible";
-    } else if (data.weather[0].main === "Clear") {
-        var iconnn = document.getElementById("icon-1");
-        iconnn.style.visibility = "visible";
-    } else if (data.weather[0].main === "Snow") {
-        var iconnnn = document.getElementById("icon-4");
-        iconnnn.style.visibility = "visible";
+        var iconn3 = document.getElementById("icon-3");
+        var iconn1 = document.getElementById("icon-1");
+        var iconn2 = document.getElementById("icon-2");
+        var iconn4 = document.getElementById("icon-4");
+        iconn3.style.visibility = "visible";
+        iconn2.style.visibility = "hidden";
+        iconn4.style.visibility = "hidden";
+        iconn1.style.visibility = "hidden";
 
+    } else if (data.weather[0].main === "Clear") {
+        var iconn3 = document.getElementById("icon-3");
+        var iconn1 = document.getElementById("icon-1");
+        var iconn2 = document.getElementById("icon-2");
+        var iconn4 = document.getElementById("icon-4");
+        iconn3.style.visibility = "hidden";
+        iconn2.style.visibility = "hidden";
+        iconn4.style.visibility = "hidden";
+        iconn1.style.visibility = "visible";
+    } else if (data.weather[0].main === "Snow") {
+        var iconn3 = document.getElementById("icon-3");
+        var iconn1 = document.getElementById("icon-1");
+        var iconn2 = document.getElementById("icon-2");
+        var iconn4 = document.getElementById("icon-4");
+        iconn3.style.visibility = "hidden";
+        iconn2.style.visibility = "hidden";
+        iconn4.style.visibility = "visible";
+        iconn1.style.visibility = "hidden";
     } else {
         data.weather[0].main === "Rain";
-        var iconnn = document.getElementById("icon-2");
-        iconnn.style.visibility = "visible";
+        var iconn3 = document.getElementById("icon-3");
+        var iconn1 = document.getElementById("icon-1");
+        var iconn2 = document.getElementById("icon-2");
+        var iconn4 = document.getElementById("icon-4");
+        iconn3.style.visibility = "hidden";
+        iconn2.style.visibility = "visible";
+        iconn4.style.visibility = "hidden";
+        iconn1.style.visibility = "hidden";
     }
 
 
