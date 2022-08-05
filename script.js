@@ -30,7 +30,7 @@ function searchBtn() {
 
     displayCities(); //calls displaycities function//
 
-    var weatherUrl = "http://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e"; //passes inputvalue for city name//
+    var weatherUrl = "https://api.openweathermap.org/geo/1.0/direct?q=" + inputValue + "&limit=1&appid=b691141e61134e390bbe0f3d737ad24e"; //passes inputvalue for city name//
     var data = getlatlon(weatherUrl); //gets the lat and lon from weatherurl//
 };
 
