@@ -14,8 +14,8 @@ function displayCities() {
     for (var i = 0; i < 8; i++) {
         var city = document.getElementById("city-" + i);
         city.textContent = localStorage.getItem("city-" + i);
-        city.style.color = "black";
-        city.style.backgroundColor = "lightgrey";
+        city.style.color = "white";
+        city.style.backgroundColor = "blue";
 
     };
 }
