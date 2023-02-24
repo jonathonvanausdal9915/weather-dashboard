@@ -1,16 +1,16 @@
 .h1 {
     text-align: center;
-    height: 100px;
+    height: 50px;
     border: solid;
+    border-radius:25px;
     background: linear-gradient(to right, rgb(36, 102, 215), rgb(5, 5, 96));
     color: white;
 }
 
-h2 {
-    position: relative;
-    left: 800px;
-    bottom: 710px;
+h1 {
+    font-size:30px;
 }
+
 
 .classs {
     position: relative;
@@ -32,6 +32,7 @@ h2 {
     background-image: url("./Rainicon.jpg");
     background-size: cover;
     visibility: hidden;
+    
 }
 
 .icon-3 {
@@ -51,26 +52,30 @@ h2 {
 }
 
 .form1 {
-    position: relative;
-    left: 200px;
+    position:relative;
+    left:1%;
+    width:30rem;
+   text-align: center;
 }
 
 .card {
     position: relative;
-    height: 550px;
+    height: 25%;
     font-size: 25px;
     left: 150px;
     top: 100px;
+    border-style:solid;
 }
 
 .card-2 {
-    height: 500px;
-    width: 1500px;
+    height:35%;
+    width:40rem;
     text-align: start;
-    border: solid;
-    position: relative;
-    bottom: 750px;
-    left: 800px;
+    position:relative;
+    left:45%;
+    bottom:50%;
+    
+    
 }
 
 #icon-1 {
@@ -113,74 +118,116 @@ h2 {
 }
 
 .searchBtn {
-    width: 400px;
-    background-color: lightskyblue;
+    width:100px;
+    background-color:blue;
     color: white;
     border-radius: 10px;
     position: relative;
-    top: 10px;
-    font-size: 40px;
+    bottom:45px;
+    font-size:15px;
 }
 
 .body {
     border: solid;
-    height: 1200px;
-    width: 2500px;
+    height:60rem;
+    border-style:solid;
+    border-radius:25px;
+    width:80rem;
+    opacity: .8;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    
+    
 }
 
 .box1 {
-    height: 300px;
-    width: 200px;
+    width:10rem;
+    height:10rem;
     border: solid;
-    position: relative;
-    left: 800px;
-    bottom: 700px;
-    ;
     color: white;
     background-color: rgb(71, 71, 85);
 }
 
 .box2 {
-    height: 300px;
-    width: 200px;
+    width:10rem;
+    height:10rem;
     border: solid;
-    position: relative;
-    left: 1125px;
-    bottom: 1000px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
 
 .box3 {
-    height: 300px;
-    width: 200px;
+    width:10rem;
+    height:10rem;
     border: solid;
-    position: relative;
-    left: 1450px;
-    bottom: 1300px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
 
 .box4 {
-    height: 300px;
-    width: 200px;
+    width:10rem;
+    height:10rem;
     border: solid;
-    position: relative;
-    left: 1775px;
-    bottom: 1600px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
 
 .box5 {
-    height: 300px;
-    width: 200px;
+    width:10rem;
+    height:10rem;
     border: solid;
-    position: relative;
-    left: 2100px;
-    bottom: 1900px;
     background-color: rgb(71, 71, 85);
     color: white;
+}
+.card {
+    position:absolute;
+    top:28%;
+    left:22%;
+    height:10%;
+ 
+    
+}
+.container {
+    position:relative;
+    left:22%;
+    bottom:40%;
+    width:45rem;
+    height:20rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap:2%;
+    
+}
+.container-bottom {
+    height:50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:1%;
+}
+.real-card {
+    height:20rem;
+    width:35rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    top:31%;
+
+}
+.btn1 {
+    width:90%;
+    height:25px;
+    border-radius:5px;
+}
+body {
+    background-image: url("./thunderstorm.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

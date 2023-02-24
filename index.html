@@ -12,6 +12,7 @@
 
 <body>
     <div class="body">
+
         <p class="h1">Weather Dashboard</p>
         <div class="form1">
             <form class="form">
@@ -23,19 +24,21 @@
             </form>
         </div>
 
-        <div class="card" style="width: 32rem;">
-            <ul class="list-group list-group-flush">
-                <button id="city-0"><li class="list-group-item"></li></button><br>
-                <button id="city-1"><li class="list-group-item"></li></button><br>
-                <button id="city-2"><li class="list-group-item"></li></button><br>
-                <button id="city-3"><li class="list-group-item"></li></button><br>
-                <button id="city-4"><li class="list-group-item"></li></button><br>
-                <button id="city-5"><li class="list-group-item"></li></button><br>
-                <button id="city-6"><li class="list-group-item"></li></button><br>
-                <button id="city-7"><li class="list-group-item"></li></button><br>
-
-            </ul>
-        </div>
+            <div class="real-card">
+                <ul>
+                    <button class="btn1"id="city-0"></button><br>
+                    <button class="btn1"id="city-1"></button><br>
+                    <button class="btn1"id="city-2"></button><br>
+                    <button class="btn1"id="city-3"></button><br>
+                    <button class="btn1"id="city-4"></button><br>
+                    <button class="btn1"id="city-5"></button><br>
+                    <button class="btn1"id="city-6"></button><br>
+                    <button class="btn1"id="city-7"></button><br>
+    
+                </ul>
+            </div>
+         
+      
 
 
         <div class="card-2">
@@ -45,67 +48,73 @@
                 <div class="icon-2" id="icon-2"></div>
                 <div class="icon-3" id="icon-3"></div>
                 <div class="icon-4" id="icon-4"></div>
-                <div class="classs"><b>Temp:</b>
-                    <p id="temp"></p>
-                    <b>Wind:</b>
-                    <p id="wind"></p>
-                    <b>Humidity:</b>
-                    <p id="humidity"></p>
+                <div class="classs"><b><h1>Temp:</h1><p id="temp"></p></b>
+                    <h1>Wind:<p id="wind"></p></h1>
+                    <h1>Humidity:<p id="humidity"></p></h1>
+                  
                 </div>
             </div>
         </div>
 
-        <h2>5-Day Forecast:</h2>
-        <div id="box1" class="box1">
-            Date:
-            <p id="date-0"></p>
-            Temp:
-            <p id="temp-0"></p>
-            Wind:
-            <p id="wind-0"></p>
-            Humidity:
-            <p id="hum-0"></p>
+       
+        <div class="container">
+            <h2>5-Day Forecast:</h2>
+            <br>
+                <div class="container-bottom">
+                    <div id="box1" class="box1">
+                        Date:
+                        <p id="date-0"></p>
+                        Temp:
+                        <p id="temp-0"></p>
+                        Wind:
+                        <p id="wind-0"></p>
+                        Humidity:
+                        <p id="hum-0"></p>
+                    </div>
+                    <div id="box2" class="box2">
+                        Date:
+                        <p id="date-1"></p>
+                        Temp:
+                        <p id="temp-1"></p>
+                        Wind:
+                        <p id="wind-1"></p>
+                        Humidity:
+                        <p id="hum-1"></p>
+                    </div>
+                    <div id="box3" class="box3">
+                        Date:
+                        <p id="date-2"></p>
+                        Temp:
+                        <p id="temp-2"></p>
+                        Wind:
+                        <p id="wind-2"></p>
+                        Humidity:
+                        <p id="hum-2"></p>
+                    </div>
+                    <div id="box4" class="box4">
+                        Date:
+                        <p id="date-3"></p>
+                        Temp:
+                        <p id="temp-3"></p>
+                        Wind:
+                        <p id="wind-3"></p>
+                        Humidity:
+                        <p id="hum-3"></p>
+                    </div>
+                    <div id="box5" class="box5">
+                        Date:
+                        <p id="date-4"></p>
+                        Temp:
+                        <p id="temp-4"></p>
+                        Wind:
+                        <p id="wind-4"></p>
+                        Humidity:
+                        <p id="hum-4"></p>
+                </div>
+            
+            </div>
         </div>
-        <div id="box2" class="box2">
-            Date:
-            <p id="date-1"></p>
-            Temp:
-            <p id="temp-1"></p>
-            Wind:
-            <p id="wind-1"></p>
-            Humidity:
-            <p id="hum-1"></p>
-        </div>
-        <div id="box3" class="box3">
-            Date:
-            <p id="date-2"></p>
-            Temp:
-            <p id="temp-2"></p>
-            Wind:
-            <p id="wind-2"></p>
-            Humidity:
-            <p id="hum-2"></p>
-        </div>
-        <div id="box4" class="box4">
-            Date:
-            <p id="date-3"></p>
-            Temp:
-            <p id="temp-3"></p>
-            Wind:
-            <p id="wind-3"></p>
-            Humidity:
-            <p id="hum-3"></p>
-        </div>
-        <div id="box5" class="box5">
-            Date:
-            <p id="date-4"></p>
-            Temp:
-            <p id="temp-4"></p>
-            Wind:
-            <p id="wind-4"></p>
-            Humidity:
-            <p id="hum-4"></p>
-        </div>
+        
 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
