@@ -9,9 +9,15 @@
 
 h1 {
     font-size:30px;
+    
 }
-
-
+h2 {
+    font-weight:900;
+}
+p {
+    color:blue;
+    font-weight:900;
+}
 .classs {
     position: relative;
     bottom: 300px;
@@ -44,18 +50,23 @@ h1 {
 .icon-4 {
     background-image: url("./snowicon.jpg");
     background-size: cover;
+    border-color:white;
     visibility: hidden;
 }
 
 .form {
     font-size: 25px;
 }
+#city {
+    color:blue;
+    font-weight:900;
+}
 
 .form1 {
     position:relative;
-    left:1%;
     width:30rem;
    text-align: center;
+
 }
 
 .card {
@@ -69,11 +80,11 @@ h1 {
 
 .card-2 {
     height:35%;
-    width:40rem;
+    width:20rem;
     text-align: start;
     position:relative;
-    left:45%;
-    bottom:50%;
+    left:55%;
+    bottom:60%;
     
     
 }
@@ -114,7 +125,7 @@ h1 {
 .card-body {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .searchBtn {
@@ -129,10 +140,10 @@ h1 {
 
 .body {
     border: solid;
-    height:60rem;
+    height:52rem;
     border-style:solid;
     border-radius:25px;
-    width:80rem;
+    width:50rem;
     opacity: .85;
     margin: auto;
     position: absolute;
@@ -149,12 +160,14 @@ h1 {
     height:10rem;
     border: solid;
     color: white;
+    font-size:8px;
     background-color: rgb(71, 71, 85);
 }
 
 .box2 {
     width:10rem;
     height:10rem;
+    font-size:8px;
     border: solid;
     background-color: rgb(71, 71, 85);
     color: white;
@@ -163,6 +176,7 @@ h1 {
 .box3 {
     width:10rem;
     height:10rem;
+    font-size:8px;
     border: solid;
     background-color: rgb(71, 71, 85);
     color: white;
@@ -172,6 +186,7 @@ h1 {
     width:10rem;
     height:10rem;
     border: solid;
+    font-size:8px;
     background-color: rgb(71, 71, 85);
     color: white;
 }
@@ -179,6 +194,7 @@ h1 {
 .box5 {
     width:10rem;
     height:10rem;
+    font-size:8px;
     border: solid;
     background-color: rgb(71, 71, 85);
     color: white;
@@ -193,7 +209,7 @@ h1 {
 }
 .container {
     position:relative;
-    left:22%;
+    left:1%;
     bottom:40%;
     width:45rem;
     height:20rem;
@@ -210,15 +226,17 @@ h1 {
     flex-direction: row;
     justify-content: center;
     gap:1%;
+
 }
 .real-card {
     height:20rem;
-    width:35rem;
+    width:25rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
     position:relative;
-    top:31%;
+    top:0;
+    left:2.5rem;
 
 }
 .btn1 {
@@ -230,6 +248,7 @@ body {
     background-image: url("./thunderstorm.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
     width:100%;
     min-height:100vh;
     margin:0;
